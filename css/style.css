@@ -4,7 +4,65 @@
 
 body {
 	margin: 0;
-	font-family: 'Josefin Slab', serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 2em;
-	color: #BDC0D9;
 }
+
+#main-nav {
+	background-color: transparent;
+	border: 0;
+}
+
+#main-nav a {
+	color: #1D1D21;	
+	font-size: 1.2em;
+	text-transform: lowercase;
+	transition: all .3s;
+}
+
+#main-nav a:hover {
+	background-color: #B28B98;
+	height: 40px;
+	cursor: n-resize;
+	opacity: 0.7;
+	
+}
+
+#main-nav.scroll {
+	background-color: #B28B98;
+	opacity: 0.7;
+}
+
+#main-nav.scroll a {
+	color: #1D1D21;
+}
+
+#main-nav.scroll a:hover {
+	color: #777777;
+}
+
+
+#main-header {
+	background-image: url(../img/abstract-1845397_1920.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	height: 100vh;
+}
+
+#main-header .header-caption {
+	text-align: center;
+	color: #1D1D21;
+	top: 50vh;
+	position: absolute;
+	margin-left: 50%;
+}
+
+#main-header .header-caption h1 {
+	font-size: 3em;
+}
+
+#main-header .header-caption h2 {
+	font-size: 2em;
+}
+
