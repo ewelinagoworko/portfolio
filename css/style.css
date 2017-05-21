@@ -1,0 +1,10 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Josefin Slab', serif;
+	font-size: 2em;
+	color: #BDC0D9;
+}
