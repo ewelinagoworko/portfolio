@@ -1,32 +1,25 @@
 $(function(){
 	
-	var okno = $(window);
-	var menu = $('#main-nav');
-	var link = $('a');
+	/* Efekt Smooth Scroll */
 	
-	if(okno.scrollTop() >= 100) {
-		menu.addClass('scroll');
+	$('a[href*="#"]:not([href="#"])').click(function(){
+		$('body').animate( { scrollTop: $(this.hash).offset().top - 50 }, 500 );
+	});
+
+	/* Scroll menu color change */
+	
+	if($(window).scrollTop() >= 50){
+		$('#main-nav').addClass('scroll');
 	}
 	
-	
-	okno.scroll(function(){
-		
-		if(okno.scrollTop() >= 100) {
-			menu.addClass('scroll');
+	$(window).scroll(function(){
+		if($(window).scrollTop() >= 50 ) {
+			$('#main-nav').addClass('scroll');
+			$('#main-nav').css({'transition':'all 0.3s'})
 		} else {
-			menu.removeClass('scroll');
+			$('#main-nav').removeClass('scroll');
 		}
 	});
 	
-	/* smooth scroll */
-
-	
-	$(document).on('click', 'a[href^="#"]', function(event){
-		event.preventDefault();
-		
-		$('html, body').animate({
-			scrollTop: $( $.attr(this, 'href') 
-			).offset().top - 91}, 500);
-		})
-	
+});
 	

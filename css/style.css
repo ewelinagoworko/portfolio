@@ -8,6 +8,8 @@ body {
 	font-size: 2em;
 }
 
+/* Section Nav Menu */
+
 #main-nav {
 	background-color: transparent;
 	border: 0;
@@ -21,7 +23,6 @@ body {
 }
 
 #main-nav a:hover {
-	background-color: #B28B98;
 	height: 40px;
 	cursor: n-resize;
 	opacity: 0.7;
@@ -29,8 +30,8 @@ body {
 }
 
 #main-nav.scroll {
-	background-color: #B28B98;
-	opacity: 0.7;
+	background-color: rgba(178, 139, 152, 0.4);
+	
 }
 
 #main-nav.scroll a {
@@ -41,6 +42,7 @@ body {
 	color: #777777;
 }
 
+/* Section Header */
 
 #main-header {
 	background-image: url(../img/abstract-1845397_1920.jpg);
@@ -65,4 +67,42 @@ body {
 #main-header .header-caption h2 {
 	font-size: 2em;
 }
+
+/* Section About */
+
+#about {
+	background-color: #F5F5F5;
+}
+
+#about .about {
+	padding: 25px;
+	text-transform: lowercase;
+}
+
+#about .about-section {
+	width: 230px;
+	list-style-type: none;
+	margin-top: 13px;
+    margin-left: 65px;
+    padding: 10px;
+}
+
+#about .about-education {
+	width: 305px;
+	list-style-type: none;
+	margin-top: 13px;
+    margin-left: 25px;
+    padding: 10px;
+}
+
+#about .about h2 {
+	transition: all .3s;
+}
+
+#about .about h2:hover {
+	cursor: n-resize;
+	color: #B28B98;
+}
+
+
 
