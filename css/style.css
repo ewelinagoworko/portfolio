@@ -126,7 +126,7 @@ body {
 
 /* Skills Section */
 
-#skills, #portfolio, #contact {
+#skills {
 	height: 600px;
 }
 
@@ -147,11 +147,97 @@ body {
 
 /* Portfolio Section */
 
+#portfolio {
+	height: 700px;
+}
+#portfolio .account {
+	margin-top: 20px;
+}
 
+#portfolio .account a {
+	text-decoration: none;
+	color: #1D1D21;
+	word-spacing: 2px;
+}
+
+#portfolio .account a:hover {
+	cursor: n-resize;
+	color: #B28B98;
+}
 
 
 /* Contact Section */
 
+#contact {
+	height: 700px;
+}
+#contact #data {
+	border: 1px solid #1D1D21;
+	height: 200px;
+	width: 400px;
+	padding: 20px;
+    line-height: 35px;
+	border-radius: 5px;
+}
+
+#contact .social-icons {
+	display: inline;
+	height: 30px;
+	font-size: 2em;
+	transition: all .3s;	
+}
+
+#contact a {
+	color: #1D1D21;
+	text-decoration: none;
+}
+
+#contact .social-icons a:hover {
+	cursor: n-resize;
+	color: #B28B98;
+}
+
+#contact .contact-section {
+	padding: 25px;
+}
+
+#contact input, #contact textarea {
+	text-transform: uppercase;
+	padding: 15px;
+	border-radius: 5px;
+	font-size: 0.7em;
+}
+
+#contact input:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+#contact input[type="submit"] {
+	margin-top: 30px;
+}
+
+#contact ::-webkit-input-placeholder,
+#contact ::-moz-placeholder,
+#contact :-ms-input-placeholder,
+#contact :-moz-placeholder {
+	color: #777;
+}
+
+#contact input:not([type='submit']), #contact textarea {
+	width: 100%;
+	border: 1px solid;
+	background-color: #F5F5F5;
+}
+
+#contact textarea {
+	height: 150px;
+}
 
 
+/* Footer */
+
+#main-footer p {
+	font-size: 0.7em;
+    margin-top: 10px;
+}
 
