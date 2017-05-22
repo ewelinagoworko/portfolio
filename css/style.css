@@ -1,3 +1,5 @@
+/* General styles */
+
 * {
 	box-sizing: border-box;
 }
@@ -6,6 +8,19 @@ body {
 	margin: 0;
 	font-family: 'Raleway', sans-serif;
 	font-size: 2em;
+}
+
+#skills, #portfolio, #contact {
+	background-color: #F5F5F5;
+}
+
+.parallax {
+	background-image: url(../img/wall-776290_1920.jpg);
+	min-height: 200px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Section Nav Menu */
@@ -25,13 +40,11 @@ body {
 #main-nav a:hover {
 	height: 40px;
 	cursor: n-resize;
-	opacity: 0.7;
-	
+	opacity: 0.7;	
 }
 
 #main-nav.scroll {
-	background-color: rgba(178, 139, 152, 0.4);
-	
+	background-color: rgba(178, 139, 152, 0.4);	
 }
 
 #main-nav.scroll a {
@@ -41,6 +54,7 @@ body {
 #main-nav.scroll a:hover {
 	color: #777777;
 }
+
 
 /* Section Header */
 
@@ -67,6 +81,7 @@ body {
 #main-header .header-caption h2 {
 	font-size: 2em;
 }
+
 
 /* Section About */
 
@@ -108,19 +123,35 @@ body {
 	color: #B28B98;
 }
 
+
 /* Skills Section */
 
-.parallax {
-	background-image: url(../img/wall-776290_1920.jpg);
-	min-height: 400px; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+#skills, #portfolio, #contact {
+	height: 600px;
 }
 
-#skills {
-	background-color: #F5F5F5;
+#skills .skills-caption {
+	margin-top: 45px;
 }
+
+#skills .coding {
+	margin-top: 50px;
+	cursor: n-resize;
+}
+
+#skills .col-sm-3 {
+	height: 200px;
+	line-height: 35px;
+}
+
+
+/* Portfolio Section */
+
+
+
+
+/* Contact Section */
+
+
 
 
