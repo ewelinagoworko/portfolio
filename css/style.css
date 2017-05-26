@@ -178,7 +178,9 @@ body {
 	padding: 20px;
     line-height: 35px;
 	border-radius: 5px;
+	transition: all .2s;
 }
+
 
 #contact .social-icons {
 	display: inline;
@@ -235,11 +237,17 @@ body {
 	width: 100%;
 	border: 1px solid;
 	background-color: #F5F5F5;
+	transition: all .2s;
 }
 
 #contact textarea {
 	height: 150px;
 	resize: none;
+}
+
+#contact textarea:hover, input:not([type='submit']):hover, #data:hover {
+	background-image: url(../img/seigaiha.png);
+	background-size: auto;
 }
 
 .contact-section #formular {
@@ -252,6 +260,12 @@ body {
 
 
 /* Footer */
+
+#main-footer {
+	background-image: url(../img/concrete_seamless.png);
+	background-size: auto;
+	background-position: center;
+}
 
 #main-footer p {
 	font-size: 0.7em;
