@@ -261,12 +261,6 @@ body {
 
 /* Footer */
 
-#main-footer {
-	background-image: url(../img/concrete_seamless.png);
-	background-size: auto;
-	background-position: center;
-}
-
 #main-footer p {
 	font-size: 0.7em;
     margin-top: 10px;

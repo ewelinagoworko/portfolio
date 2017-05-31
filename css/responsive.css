@@ -78,8 +78,33 @@
 	}
 }
 
-
-
 @media (max-width: 765px) {
+	#contact {
+		height: 1000px;
+	}
+	#contact #formular {
+		transform: translateY(70%) translateX(6%);
+	}
 	
+	#contact #data {
+		transform: translateX(60%);
+	}
+	
+	#contact #send {
+		transform: translateX(-90%);
+		bottom: -20px;
+	}
+}
+
+
+@media (max-width: 650px) {
+	#contact .contact-section {
+		transform: translateX(-15%);
+	}
+}
+
+@media (max-width: 600px) {
+	#contact #send {
+		margin-right: auto;
+	}
 }
