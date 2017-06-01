@@ -141,8 +141,49 @@ body {
 
 #skills .col-sm-3 {
 	height: 200px;
-	line-height: 35px;
 }
+
+.box {
+	height: 155px;
+	width: 125px;
+	position: relative;
+	display: inline-block;
+	padding: 5px;
+    line-height: 20px;
+}
+
+.box-in {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	transition: all 0.5s;
+}
+
+.box-front {
+	background-color: transparent;
+	z-index: 1;
+	backface-visibility: hidden;
+	
+}
+
+.box-back {
+	background-color: #F5F5F5;
+	transform: rotateY(180deg);
+	z-index: 1;
+	backface-visibility: hidden;
+	line-height: 30px;
+}
+
+ 
+.box:hover .box-front {
+	transform: rotateY(180deg);
+}
+
+
+.box:hover .box-back {
+	transform: rotateY(0deg);
+}
+
 
 
 /* Portfolio Section */
