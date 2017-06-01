@@ -55,6 +55,10 @@
 		bottom: 200px;
 		float: right;
 	}
+	
+	#slider {
+		margin-left: 190px;
+	}
 }
 
 
@@ -76,6 +80,10 @@
 		transform: translateX(60%);
 		bottom: 200px;
 	}
+	
+	#slider {
+		margin-left: 85px;
+	}
 }
 
 @media (max-width: 765px) {
@@ -93,6 +101,12 @@
 	#contact #send {
 		transform: translateX(-90%);
 		bottom: -20px;
+	}
+}
+
+@media (max-width: 720px) {
+	#slider {
+		margin-left: 50px;
 	}
 }
 
